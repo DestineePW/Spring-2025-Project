@@ -1,5 +1,21 @@
 // interactive nature of the app
 
+/*GOAL 
+
+Take in user input in a form and display the results of the form
+
+Retrieve
+  Put the element into  useable container 
+  Get the content out of the element 
+
+Update
+  Get the result of all of the containers 
+  Display everything in the containers in one spot
+
+  
+*/
+
+
 const checkInForm = document.getElementById('check-in-form');
 const nameInput = document.getElementById('name-input');
 const dropdownMenu = document.getElementById('dropdown')
