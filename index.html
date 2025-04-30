@@ -1,47 +1,43 @@
 <!-- What shows up on the screen -->
-<html>
+<html lang="eng">
   <head>
-    <link rel="stylesheet" href="index.css" />
-  </head>
-  <body>
-    <header>
-      <div id="nav-links">
+    <link rel="stylesheet" href="index.css" /><div id="nav-links">
         Logo here
         <a href="https://www.shantiyogastl.com/">Link 1</a>
         <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 2</a>
-        <a href="">Link 3</a>
+        <link href="">Link 3</a>
       </div>
-    </header>
-
+  </head>
+  <body>
     <div id="main-page-content">
-      <h1 id="main-text">Check In Here!</h1>
-      <!-- <p id="secondary-text">Please enter your verification code below</p>
-    -->
-      
-      <form>
-        <label>First Name:</label>
-        <input type="text" /><br />
-        <label>Last Name:</label>
-        <input type="text" /><br />
-      </form>
+      <h1 id="top-message">Check In Here!</h1>
+      <div class="form-result" id="filled-out-form"></div>
+      <div class="container">
+        <form id="check-in-form">
+            <span>
+          <label>Enter Your Name</label><br>
+      <input id="name-input" type="text" placeholder="First Name"/><br />
+      </span>
+      <span>
+        <label>Choose your group</label><br />
+        <select id="dropdown" name="options">
+          <option>Option 1</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+          </select>
+        </span>
 
-      <form>
+      <span>
         <label>Question?</label><br />
         <input type="checkbox" />
         <label>Yes</label><br />
         <input type="checkbox" />
         <label>No</label><br />
+      </span>         
+      <button type="submit" id="submit" >Submit</button>
+        </div>
       </form>
-
-      <form>
-        <label>Choose your group</label><br />
-        <select>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option></select
-        ><br />
-        <button>Submit</button>
-      </form>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>

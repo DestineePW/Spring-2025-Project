@@ -1,24 +1,41 @@
 /* How it looks */
 
-*{
+* {
   font-size: 30px;
 }
 
-#counter {
-  height: 500px;
-  width: 500px;
+header{
+  /* margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px; */
+}
+
+#nav-links{
+  width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: azure;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+#main-page-content {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  padding: 100px;
   background-color: cadetblue;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 3px solid green;
 }
 
-#add-one {
-}
 
-#subtract-one {
-}
 
 button {
   font-size: 30px;
@@ -27,4 +44,3 @@ button {
   margin-top: 15px;
   background-color: goldenrod;
 }
-

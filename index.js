@@ -1,17 +1,60 @@
 // interactive nature of the app
 
-const addOne = (event) => {
-  const displayNumElement = document.getElementById('display-number');
-  displayNumElement.innerText = parseInt(displayNumElement.innerText) + 1;
-};
+const checkInForm = document.getElementById('check-in-form');
+const nameInput = document.getElementById('name-input');
+const dropdownMenu = document.getElementById('dropdown')
 
-const subtractOne = (event) => {
-  const displayNumElement = document.getElementById('display-number');
-  displayNumElement.innerText = parseInt(displayNumElement.innerText) - 1;
-};
 
-const addOneButton = document.getElementById('add-one');
-const subtractOneButton = document.getElementById('subtract-one');
 
-addOneButton.onclick = addOne;
-subtractOneButton.onclick = subtractOne;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const question = document.getElementById('checkbox');
+
+// const form = document.getElementById('empty-form');
+
+// form.addEventListener('submit', function(event) {
+//   event.preventDefault();
+// })
+
+
+// const getName = () =>{
+//   const nameInput = document.getElementById('nameInput');
+//   const name = nameInput.value;
+//   displayName.innerText = name;
+//   if (name){
+//     message.innerText = `hello, ${name}!`
+//   } else{
+//     message.innerText = `Please enter your name!`
+//   }
+//   }
+
+
+//   const submitForm = (event) => {
+//     const displayName = document.getElementById("display-name")
+    
+//   }
+
+// const submitButton = document.getElementById('submit');
+
+// submitButton.onclick = submitForm;
+
+// submitButton.onclick = submit
