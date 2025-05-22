@@ -15,32 +15,32 @@ Update
   
 */
 
+// const checkInForm = document.getElementById('check-in-form');
+// const dropdownMenu = document.getElementById('dropdown');
 
-const checkInForm = document.getElementById('check-in-form');
-const nameInput = document.getElementById('name-input');
-const dropdownMenu = document.getElementById('dropdown')
+//I changed the way I got the value out of and used the value inside of the object for each different type of element
+const getElementValue = (id, valuePropName) => {
+  const inputElement = document.getElementById(id);
+  const inputElementValue = inputElement[valuePropName];
 
-
-
-
-
-
-
-
+  return inputElementValue;
+};
 
 
+const getContent = () => {};
+
+const getResult = () => {};
+
+const displayContent = () => {};
 
 
+document.addEventListener('submit', ()=>{
+ const selectedElement = getElementValue('name-input', 'value');
+ const selectedElement1 = getElementValue('dropdown', 'value');
+ const selectedElement2 = getElementValue('checkbox-yes', 'checked');
+ const selectedElement3 = getElementValue('checkbox-no', 'checked');
 
-
-
-
-
-
-
-
-
-
+});
 
 
 // const question = document.getElementById('checkbox');
@@ -50,7 +50,6 @@ const dropdownMenu = document.getElementById('dropdown')
 // form.addEventListener('submit', function(event) {
 //   event.preventDefault();
 // })
-
 
 // const getName = () =>{
 //   const nameInput = document.getElementById('nameInput');
@@ -63,10 +62,9 @@ const dropdownMenu = document.getElementById('dropdown')
 //   }
 //   }
 
-
 //   const submitForm = (event) => {
 //     const displayName = document.getElementById("display-name")
-    
+
 //   }
 
 // const submitButton = document.getElementById('submit');

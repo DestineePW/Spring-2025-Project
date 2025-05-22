@@ -1,42 +1,44 @@
 <!-- What shows up on the screen -->
 <html lang="eng">
   <head>
-    <link rel="stylesheet" href="index.css" /><div id="nav-links">
-        Logo here
-        <a href="https://www.shantiyogastl.com/">Link 1</a>
-        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 2</a>
-        <link href="">Link 3</a>
-      </div>
+    <link rel="stylesheet" href="index.css" />
+    <div id="nav-links">
+      Logo here
+      <a href="https://www.shantiyogastl.com/">Link 1</a>
+      <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Link 2</a>
+      <a href="">Link 3</a>
+    </div>
   </head>
   <body>
     <div id="main-page-content">
       <h1 id="top-message">Check In Here!</h1>
-      <div class="form-result" id="filled-out-form"></div>
       <div class="container">
         <form id="check-in-form">
-            <span>
-          <label>Enter Your Name</label><br>
-      <input id="name-input" type="text" placeholder="First Name"/><br />
-      </span>
-      <span>
-        <label>Choose your group</label><br />
-        <select id="dropdown" name="options">
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-          </select>
-        </span>
+          <span>
+            <label>Enter Your Name</label><br />
+            <input id="name-input" type="text" placeholder="First Name" /><br />
+          </span>
+          <span>
+            <label>Choose your group</label><br />
+            <select id="dropdown" name="options">
+              <option>Option 1</option>
+              <option>Option 2</option>
+              <option>Option 3</option>
+            </select>
+          </span>
 
-      <span>
-        <label>Question?</label><br />
-        <input type="checkbox" />
-        <label>Yes</label><br />
-        <input type="checkbox" />
-        <label>No</label><br />
-      </span>         
-      <button type="submit" id="submit" >Submit</button>
-        </div>
-      </form>
+          <span>
+            <label>Question?</label><br />
+            <input id="checkbox-yes" type="checkbox" />
+            <label>Yes</label><br />
+            <input id="checkbox-no" type="checkbox" />
+            <label>No</label><br />
+          </span>
+          <button type="submit" id="submit">Submit</button>
+        </form>
+      </div>
+      <div class="form-result" id="filled-out-form">
+        <span>Thanks for filling out the form NAME! You are successfully check in to Option 3, YES NO</span>
       </div>
     </div>
     <script src="index.js"></script>
