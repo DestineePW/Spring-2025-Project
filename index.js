@@ -26,20 +26,29 @@ const getElementValue = (id, valuePropName) => {
   return inputElementValue;
 };
 
-
 const getContent = () => {};
 
 const getResult = () => {};
 
-const displayContent = () => {};
+/**
+ The goal of this function is to display the values in the form in a message to the right
+ >Thanks for filling out the form NAME! You are successfully checked in to Option 3, YES NO<
+ 
+ */
+const displayContent = (name, group, checkedBoxIsYes, checkedBoxIsNo ) => {
+  const formResultMessage = `Thanks for filling out the form ${name}! You are successfully checked in to ${group}, ${checkedBoxIsYes ? 'Yes' : ""} ${checkedBoxIsNo? 'No' : ""}`;
+
+};
 
 
-document.addEventListener('submit', ()=>{
- const selectedElement = getElementValue('name-input', 'value');
- const selectedElement1 = getElementValue('dropdown', 'value');
- const selectedElement2 = getElementValue('checkbox-yes', 'checked');
- const selectedElement3 = getElementValue('checkbox-no', 'checked');
 
+document.addEventListener('submit', () => {
+  const name = getElementValue('name-input', 'value');
+  const group = getElementValue('dropdown', 'value');
+  const checkedBoxIsYes = getElementValue('checkbox-yes', 'checked');
+  const checkedBoxIsNo = getElementValue('checkbox-no', 'checked');
+  
+  displayContent(name, group, checkedBoxIsYes, checkedBoxIsNo);
 });
 
 

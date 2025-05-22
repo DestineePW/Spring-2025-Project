@@ -23,18 +23,25 @@ header{
 
 
 #main-page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   width: 600px;
   height: 600px;
   margin: auto;
   padding: 100px;
   background-color: cadetblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   border: 3px solid green;
 }
 
+#filled-out-form{
+  margin-left: 49px;
+}
+
+#filled-out-form span{
+  font-size: 33px;
+}
 
 
 button {
