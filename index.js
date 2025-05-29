@@ -35,20 +35,32 @@ const getResult = () => {};
  >Thanks for filling out the form NAME! You are successfully checked in to Option 3, YES NO<
  
  */
-const displayContent = (name, group, checkedBoxIsYes, checkedBoxIsNo ) => {
-  const formResultMessage = `Thanks for filling out the form ${name}! You are successfully checked in to ${group}, ${checkedBoxIsYes ? 'Yes' : ""} ${checkedBoxIsNo? 'No' : ""}`;
-
+const displayContent = (name, group, checkedBoxIsYes, checkedBoxIsNo) => {
+  const formResultMessage = `Thanks for filling out the form ${name}! You are successfully checked in to ${group}, ${
+    checkedBoxIsYes ? 'Yes' : ''
+  } ${checkedBoxIsNo ? 'No' : ''}`;
+  const formResultElement = document.getElementById('filled-out-form');
+  formResultElement.innerHTML = formResultMessage;
 };
 
+const eraseResultMessage = (ms = 9000) => {
+  const formResultElement = document.getElementById('filled-out-form');
+  setTimeout(() => {
+    formResultElement.innerHTML = '';
+  }, ms);
+};
 
-
-document.addEventListener('submit', () => {
+document.addEventListener('submit', (e) => {
+  e.preventDefault();
   const name = getElementValue('name-input', 'value');
   const group = getElementValue('dropdown', 'value');
   const checkedBoxIsYes = getElementValue('checkbox-yes', 'checked');
   const checkedBoxIsNo = getElementValue('checkbox-no', 'checked');
-  
+
   displayContent(name, group, checkedBoxIsYes, checkedBoxIsNo);
+
+  eraseResultMessage();
+
 });
 
 
